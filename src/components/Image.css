@@ -1,0 +1,55 @@
+.hero-container-about {
+  /* background: url("/public/images/young-gym.jpg") center center/cover no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.about__item__img {
+  position: inherit;
+  top: 0;
+  right: 0;
+  bottom: 100;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+.image-container {
+  position: relative;
+}
+
+.hero-container-about > h1 {
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  right: 15%;
+  transform: translate(-80%, 100%);
+
+  /* margin-top: -100px; */
+}
+
+@media screen and (max-width: 1500px) {
+  .hero-container-about > h1 {
+    font-size: 30px;
+    /* margin-top: -130px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container-about > h1 {
+    font-size: 50px;
+    /* margin-top: -100px; */
+  }
+}
